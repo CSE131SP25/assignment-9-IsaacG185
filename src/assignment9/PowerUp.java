@@ -24,7 +24,7 @@ public class PowerUp {
         return Math.random() < 0.5 ? 2 : -2; // 50% chance to grow (+2) or shrink (-2)
     }
     
-    // Check if the snake head is colliding with the power-up
+    // fix if the snake head is colliding with the power-up
     public boolean isEatenBy(Snake snake) {
         BodySegment head = snake.getHead();
         double distance = Math.sqrt(Math.pow(head.getX() - x, 2) + Math.pow(head.getY() - y, 2));
